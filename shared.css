@@ -15,6 +15,10 @@ body {
   /* font-family: "Raleway", sans-serif; */
 }
 
+ul {
+  list-style: none;
+}
+
 #page-logo a:link,
 #page-logo a:visited {
   padding: 1rem;
