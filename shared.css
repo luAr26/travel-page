@@ -1,5 +1,7 @@
 :root {
+  --primary-color: rgb(255, 251, 0);
   --default-box-shadow: 2px 4px 8px rgb(68, 67, 67);
+  --default-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 *,
 *:before,
@@ -31,6 +33,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 #page-logo a:link,
@@ -41,7 +47,7 @@ header {
   font-size: 5rem;
   text-decoration: none;
   text-transform: uppercase;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-shadow: var(--default-text-shadow);
 }
 
 nav ul {
@@ -53,4 +59,20 @@ nav ul {
 nav ul li {
   text-align: right;
   margin-left: 2rem;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1.2rem;
+  text-shadow: var(--default-text-shadow);
+  border-radius: 6px;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+  color: rgb(77, 77, 77);
+  background-color: var(--primary-color);
 }
