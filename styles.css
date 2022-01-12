@@ -50,3 +50,13 @@
 #hero-content a:active {
   background-color: rgb(255, 238, 0);
 }
+
+#destinations {
+  display: flex;
+  width: 90%;
+  margin: 0 auto 4rem;
+}
+
+.destination img {
+  height: 20rem;
+}
