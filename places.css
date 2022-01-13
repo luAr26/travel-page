@@ -6,7 +6,21 @@ header {
   position: static;
 }
 
+main ul {
+  width: 80rem;
+  margin: 0 auto;
+}
+
+main ul li {
+  display: flex;
+  background-color: #fff;
+}
+
 main ul li img {
   width: 30rem;
   height: auto;
+}
+
+.item-content {
+  padding: 2.4rem;
 }
