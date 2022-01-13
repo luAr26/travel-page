@@ -69,3 +69,19 @@ main ul li img {
   color: #fff;
   background-color: var(--card-link-color);
 }
+
+#page-logo a:link,
+#page-logo a:visited {
+  color: rgb(183, 230, 235);
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+  color: rgb(183, 230, 235);
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+  color: rgb(59, 59, 59);
+  background-color: rgb(183, 230, 235);
+}
