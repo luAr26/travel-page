@@ -8,8 +8,12 @@ header {
 }
 
 main ul {
-  width: 100rem;
+  width: 120rem;
   margin: 0 auto;
+  padding: 3.6rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
 main ul li {
@@ -21,8 +25,12 @@ main ul li {
   overflow: hidden;
 }
 
+main ul li:nth-of-type(3n) {
+  grid-column: 1 / span 2;
+}
+
 main ul li img {
-  width: 30rem;
+  width: 20rem;
   height: auto;
   /* object-fit: cover; */
 }
@@ -31,6 +39,7 @@ main ul li img {
   padding: 2.4rem;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   /* justify-content: space-between; */
 }
 
