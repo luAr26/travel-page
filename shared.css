@@ -76,3 +76,26 @@ nav ul li a:active {
   color: rgb(77, 77, 77);
   background-color: var(--primary-color);
 }
+
+footer {
+  background: linear-gradient(70deg, rgb(24, 24, 24), rgb(25, 29, 29));
+  padding: 3.6rem;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  /* gap: 2rem; */
+}
+
+footer ul li {
+  width: 8rem;
+  height: 8rem;
+  margin: 0 3.6rem;
+}
+
+footer ul li a img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
