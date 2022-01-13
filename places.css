@@ -14,13 +14,47 @@ main ul {
 main ul li {
   display: flex;
   background-color: #fff;
+  box-shadow: var(--default-box-shadow);
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 main ul li img {
   width: 30rem;
   height: auto;
+  /* object-fit: cover; */
 }
 
 .item-content {
   padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.item-content h2 {
+  margin-bottom: 1.6rem;
+}
+
+.item-content div {
+  text-align: right;
+  margin-top: auto;
+}
+
+.item-content div a:link,
+.item-content div a:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  color: lightblue;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  padding: 0.4rem 1.2rem;
+  border-radius: 3px;
+}
+
+.item-content div a:hover,
+.item-content div a:active {
+  color: #fff;
+  background-color: lightblue;
 }
