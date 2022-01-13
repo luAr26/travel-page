@@ -1,5 +1,6 @@
 body {
   background: linear-gradient(30deg, rgb(77, 77, 77), rgb(58, 58, 58));
+  color: rgb(68, 68, 68);
 }
 
 header {
@@ -7,12 +8,13 @@ header {
 }
 
 main ul {
-  width: 80rem;
+  width: 100rem;
   margin: 0 auto;
 }
 
 main ul li {
   display: flex;
+  /* justify-content: space-between; */
   background-color: #fff;
   box-shadow: var(--default-box-shadow);
   border-radius: 6px;
@@ -46,7 +48,7 @@ main ul li img {
   display: inline-block;
   text-decoration: none;
   font-weight: 700;
-  color: lightblue;
+  color: var(--card-link-color);
   background-color: transparent;
   transition: all 0.3s ease-in-out;
   padding: 0.4rem 1.2rem;
@@ -56,5 +58,5 @@ main ul li img {
 .item-content div a:hover,
 .item-content div a:active {
   color: #fff;
-  background-color: lightblue;
+  background-color: var(--card-link-color);
 }
